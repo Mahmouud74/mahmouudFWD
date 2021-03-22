@@ -1,0 +1,342 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.nav
+{   
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    background-color:rgba(51, 48, 48);
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.nav a ,.nav li , .navItem
+{   
+
+    display: inline;
+    list-style:  none;
+    padding:20px 10px 0px 20px;
+    text-decoration: none;
+    color: rgb(228, 216, 216);
+    transition-property: font-size color text-decoration ;
+    transition-duration: .5s;
+    transition-timing-function: ease-in;
+    text-transform: uppercase;
+}
+ul li.active a
+{   
+    height: 90%;
+    background-color: rgba(253, 251, 251, 0.959);
+    color: black;
+    font-size:"18px";
+    text-decoration:underline white ;
+    border: 2px solid grey;
+}
+
+
+.nav a:hover{
+    background-color: grey;
+    color: black;
+    text-decoration: underline white;
+    font-size: 18px;
+}
+#home
+{  
+    padding-top: 40px;
+    background-image: url(https://www.netpremacy.com/wp-content/uploads/2018/09/google-next-landing-page-background-01.png);
+    height: 500px;
+    background-attachment: cover;
+    background-size: 100% 90%;
+    background-repeat: no-repeat;
+}
+.intro
+{   font-family: 'Abril Fatface', cursive;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    position: relative;
+}
+.intro h1
+{
+    position: absolute;
+    top: 150px;
+    font-weight:850px ;
+    font-size: 70px;
+    color: rgba(71, 69, 69, 0.3);
+}
+.intro h2
+{
+    position: absolute;
+    top: 162px;
+    font-weight: 950px;
+    font-size: 55px;
+}
+#introP
+{
+    padding: 10px;
+    width: 50%;
+    position: absolute;
+    top: 250px;
+    left: -800px;
+    border: solid 3px gray;
+    border-radius:20px ;
+    -webkit-border-radius:20px ;
+    -moz-border-radius:20px ;
+    -ms-border-radius:20px ;
+    -o-border-radius:20px ;
+}
+#ourstory
+{   padding: 80px 0px;
+    font-family: 'Abril Fatface', cursive;
+    padding-top: 40px;
+    background-color:rgba(145, 141, 141,.1);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+
+}
+.img-cont
+{
+    width: 50%;
+    padding-left: 40px;
+}
+.img-cont img
+{
+    width:100% ;
+}
+.story
+{   color: rgb(97, 97, 97);
+    padding-top: 60px;
+    padding-left: 10px;
+    width: 40%;
+}
+.story h3
+{   
+    margin-top: 20px;
+    padding-left: 10px;
+    border-left: solid 2px black;
+    border-bottom: solid 2px black ;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+#gallery
+{
+    margin-top: 20px;
+    height: 700px;
+    padding:100px 0px;
+
+}
+.flex
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around
+}
+.item
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(97, 97, 97,.5);
+    width: 10%;
+    height: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.skill
+{   font-family: 'Abril Fatface', cursive;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    position: relative;
+    margin: 50px 0px;
+}
+.skill h1
+{
+
+    font-weight:850px ;
+    font-size: 70px;
+    color: rgba(71, 69, 69, 0.3);
+}
+.skill h2
+{
+    position: absolute;
+    top: 10px;
+    font-weight: 1000px;
+    font-size: 60px;
+}
+#about
+{
+    font-family: 'Abril Fatface', cursive;
+    background-color:rgba(145, 141, 141,.1);
+    margin-top: 20px;
+    padding: 100px 0px 100px 0px;
+}
+#about h3
+{
+    display: inline;
+}
+.about{
+
+    padding: 10px 0px;
+    width: 23%;
+    background-color: white;
+    border:1px solid black;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition-property:color background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+.about h2
+{
+    padding-left: 5px;
+}
+.about p 
+{
+    padding-left: 2px;
+}
+.about:hover
+{
+    background-color: black;
+    color: white;
+    padding:2px
+    
+}
+.about ul
+{
+    padding-left:30px;
+    padding-top:5px ;
+}
+.about li
+{
+    padding-bottom: 10px;
+}
+.about:hover li
+{
+    color: white;
+}
+.about:hover ul
+{
+    border: 1px white solid;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.about:hover p
+{
+    border: 1px white solid;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+@media (max-width: 1000px) {
+    .item
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(97, 97, 97,.5);
+    width: 30%;
+    height: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+    .about{
+    margin-top: 20px;
+    padding: 10px 0px;
+    width: 100%;
+    background-color: white;
+    border:1px solid black;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition-property:color background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+    .nav
+    {
+        position: fixed;
+        justify-content: flex-start;
+    }
+    .nav a ,.nav li
+    {
+        padding-right: 0px;
+        padding-left: 10px;
+    }
+    
+    ul li.active a
+{   
+    height: 90%;
+    background-color: rgba(253, 251, 251, 0.959);
+    color: black;
+    font-size:"12px";
+    text-decoration:underline white ;
+    border:  none;
+    }
+    .last h1 
+    {
+        font-size: 10px;
+    }
+  }
+.bye
+{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    position: relative;
+    padding: 150px 0px;
+}
+.last
+{
+    width: 50%;
+}
+.last h1
+{
+    color: white;
+    background-color:black;
+    text-align: center;
+    font-size: 70px;
+    border: solid 5px #9c9a9a ;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition-property: color background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+.last h1:hover{
+    color: black;
+    background-color: rgba(107, 106, 106,.6);
+    border-color:black ;
+}
